@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickNumber(View view) {
-        if (result != "") {
+        if (!result.equals("")) {
             reset();
             updateScreen();
         }
@@ -66,15 +66,15 @@ public class MainActivity extends AppCompatActivity {
     public void onClickOperator(View view) {
         Button b = (Button) view;
 
-        if (display == "") return;
+        if (display.equals("")) return;
 
-        if (result != "") {
+        if (!result.equals("")) {
             String oldDisplay = result;
             reset();
             display = oldDisplay;
         }
 
-        if (currentOperator != "") {
+        if (!currentOperator.equals("")) {
            if ( isOperator(display.charAt(display.length() - 1)) ) {
                display = display.replace(display.charAt(display.length() - 1), b.getText().charAt(0));
                updateScreen();
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean getResult() {
-        if (currentOperator == "") return false;
+        if (currentOperator.equals("")) return false;
         String[] operation = display.split(Pattern.quote(currentOperator));
         if (operation.length < 2) return false;
         result = String.valueOf(operate(operation[0], operation[1], currentOperator));
@@ -119,8 +119,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickResult(View view) {
-        if (display == "") return;
+        if (display.equals("")) return;
         if (!getResult()) return;
-        screen.setText(display + "\n" + String.valueOf(result));
+        screen.setText(display + "\n" + "= "+ String.valueOf(result));
     }
 }

@@ -16,6 +16,8 @@
         android:maxLines="2"
         android:nestedScrollingEnabled="false"
         android:text="0"
+        android:paddingEnd="20dp"
+        android:paddingTop="20dp"
         android:textSize="40sp" />
 
     <LinearLayout
@@ -42,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="7"
                     android:textSize="25sp" />
@@ -52,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="8"
                     android:textSize="25sp" />
@@ -62,7 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="9"
                     android:textSize="25sp" />
@@ -79,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="4"
                     android:textSize="25sp" />
@@ -89,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="5"
                     android:textSize="25sp" />
@@ -99,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="6"
                     android:textSize="25sp" />
@@ -116,7 +118,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="1"
                     android:textSize="25sp" />
@@ -126,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="2"
                     android:textSize="25sp" />
@@ -136,7 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickNumber"
                     android:text="3"
                     android:textSize="25sp" />
@@ -148,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/layout_button"
+                android:background="@drawable/custom_btn"
                 android:onClick="onClickNumber"
                 android:text="0"
                 android:textSize="25sp" />
@@ -177,7 +179,7 @@
                     android:textColor="@color/colorReset"
                     android:textSize="25sp"
                     android:onClick="onClickReset"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:layout_weight="1"/>
 
             </LinearLayout>
@@ -193,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickOperator"
                     android:text="x"
                     android:textSize="25sp" />
@@ -203,7 +205,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickOperator"
                     android:text="/"
                     android:textSize="25sp" />
@@ -221,7 +223,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickOperator"
                     android:text="+"
                     android:textSize="25sp" />
@@ -231,7 +233,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_button"
+                    android:background="@drawable/custom_btn"
                     android:onClick="onClickOperator"
                     android:text="-"
                     android:textSize="25sp" />
@@ -248,7 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/layout_bt_spellcial"
+                    android:background="@drawable/custom_btn_sp"
                     android:onClick="onClickResult"
                     android:text="="
                     android:textSize="25sp" />
